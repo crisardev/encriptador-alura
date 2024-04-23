@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logoimg" src="img/logo.png" alt="logo-alura">
+            <h1 class="tittle">Encriptador de texto</h1>
+        </div>
+
+        <div class="campo-izquierdo">
+            <textarea class="text-input" id="inputTexto" type="text" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+        <div class="advertencia">
+            <p><i class="fa fa-exclamation-circle"></i> Solo minúsculas y sin acentos</p>
+        </div>
+
+        <div class="left-button">
+            <button type="button" id="botonEn" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="botonDes" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+        <div class="campo-derecho">
+            <img id="imagen-muneco" src="img/muñeco.png" alt="">
+            <div class="mensaje-encriptado">
+                <h2 id="texto">Ningun mensaje fue encontrado</h2>
+                <p id="texto2">Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            <button type="button" id="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <p>Cristian Gramajo - Año 2024</p>
+</footer>
+</html>
